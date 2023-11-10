@@ -1,0 +1,7 @@
+body{
+    background-color: rgb(88, 88, 88);
+}
+.card{
+    background-color: rgb(255, 0, 85);
+    color: white; /* Color del texto */
+}

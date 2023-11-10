@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+  <div class="row">
+    <div class="row">
+      <h1>{{ manga.title }}</h1><h2>{{ manga.autor }}</h2>
+    </div>
+    <div class="row">
+      {% for url in manga.urls.all %}
+        <img src="{{ url.url }}" alt="" />
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row"></div>
+{% endblock %}

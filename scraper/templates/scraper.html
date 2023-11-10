@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method="POST" action="" class="row bg-dark rounded text-light m-1">
+    {% csrf_token %}{{error}}
+    <div class="mb-3">
+      <label for="titulo" class="form-label">Titulo</label>
+      <input type="text" class="form-control" id="titulo" name="titulo"/>
+    </div>
+    <div class="mb-3">
+      <label for="autor" class="form-label">Autor</label>
+      <input type="text" class="form-control" id="autor" name="autor" />
+    </div>
+    <div class="mb-3">
+      <label for="url" class="form-label">Url</label>
+      <input type="url" class="form-control" id="url" name="url" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
